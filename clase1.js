@@ -1,3 +1,5 @@
+//import {sumar,restar} from './clase1.js'; //importa funciones desde otro archivo
+
 console.log("Hola Mundo");
 
 //como declarar funciones
