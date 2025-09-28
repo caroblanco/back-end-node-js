@@ -1,0 +1,19 @@
+Fundamentos del asincronismo
+ejecutar tareas en segundo plano sin bloquear el programa principal
+apps mas eficientes y rapidas
+JS: eventos, uso callbacks, promesas y async/wait
+ejecuta uno a la vez, pero no traba todo
+permite al usuario seguir interactuando con la app aunque el proceso siga corriendo en segundo plano. mejor experiencia de usuario
+un unico hilo, una sola secuencia de comandos
+Call stack: js va apilando funciones/ejecuciones de funciones en el stack, apila hasta que llega a la  ultima funcion que no llama a mas nada. La resuelve y la saca de la pila, y asi va para abajo resolviendo y sacando.
+Call back queue: guarda funciones callback y resultados de tareas async. ejecuta funciones cuando el callback esta vacio. ejecucion en segundo plano. el callback stack sigue ejecutando. devuelve a medida que resuelve.
+Event loop: call stack con instrucciones basicas (funciones por ej), si tengo que esperar resolucion se lo mando a la callback queue. esta me va a ir devolviendo a medida q se resuelva.
+el call stack manda al call queue los metodos async.
+Promesas: funciones que se pasan como argumento a otra funcion. capaz paso un objeto y una fucion a una funcion. 
+
+objeto promesa: representan el resultado eventual de una tarea async. se q dentro de esta promesa voy a poner una tarea async a resolver. voy a tener que esperar q se resuelva.
+estado exitoso o rejected. no es bloquante. 
+metodos:
+    -then: cuando se resuelve la promesa
+    -catch: si hay un erorr sigue por aca
+    -finally: al que va cuando haya pasado por el then o el catch. puede ser opcional
