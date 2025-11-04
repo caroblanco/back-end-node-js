@@ -1,0 +1,3 @@
+CORS: acceso a recursos desde un dominio diferente al del documento
+seguridad de apps webs
+puedo configurar URLS especificas q pueden acceder a mi servicio

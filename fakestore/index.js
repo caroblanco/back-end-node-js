@@ -1,4 +1,4 @@
-async function obtenerProdutos(){
+async function obtenerProductos(){
     try{
         const response = await fetch("https://fakestoreapi.com/products",{
         method: "GET"
@@ -74,7 +74,7 @@ console.log(args);
 if (args[0] == 'get'){
     console.log("get", args[1]);
     if (args[1] == 'products'){
-        obtenerProdutos();
+        obtenerProductos();
     }else{
         obtenerUnProducto(args[1]);
     }
@@ -91,6 +91,8 @@ if (args[0] == 'get'){
 }else if (args[0] == 'delete'){
     console.log("delete");
     eliminarProducto(args[1]);
+}else{
+    console.log("comando erroneo");
 }
 
 
