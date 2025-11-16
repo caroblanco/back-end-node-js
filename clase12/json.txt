@@ -1,0 +1,14 @@
+CLASE 13
+json.parse - obtiene un json y lo transforma en objeto
+    json.parse(jsonString, reviver(opcional))
+stringify - obtiene un objeto y lo transforma en json. spacer es identacion.
+    json.stringify(value, replacer(opcional), space(opcional))
+
+FILESYSTEM
+leer la informacion en un archivo
+    fs.readFile(ruta, encoding, callback(err, data))
+puedo escribir, agregar y eliminar archivos
+    fs.writeFile(ruta, data, encoding, callback(err))
+    fs.appendFile(ruta, data, encoding, callback(err))
+    fs.unlink(ruta, callback(err))
+    
